@@ -1,4 +1,4 @@
 SELECT *
 FROM orders
-WHERE date = 2021-01-04
+WHERE date = NOW()
 ORDER BY number;

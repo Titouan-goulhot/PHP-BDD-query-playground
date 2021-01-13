@@ -1,4 +1,2 @@
-SELECT *
-FROM orders
-WHERE date 
-between DATEADD('2021-01-04', INTERVAL -10 day) AND NOW();
+SELECT * FROM orders 
+WHERE date >= DATE_SUB(CURDATE(), INTERVAL 10 DAY); 
